@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>Uniway Support / FAQ</title>
+  <meta name="description" content="UNIWAY 공식 지원 · FAQ" />
+  <meta property="og:title" content="Uniway Support / FAQ" />
+  <meta property="og:description" content="UNIWAY 공식 지원 · FAQ" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='256' cy='256' r='256' fill='%23ffffff'/%3E%3Cpath d='M132 280c0-74 50-132 124-132s124 58 124 132' fill='none' stroke='%23000' stroke-width='36' stroke-linecap='round'/%3E%3Cpath d='M180 324h152' stroke='%23000' stroke-width='36' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Uniway Support / FAQ</h1>
+      <p class="subtitle">UNIWAY 공식 도움말 페이지</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact card">
+      <h2>문의</h2>
+      <p>Uniway 사용 중 문의사항 또는 제안사항은 아래 이메일로 연락 주세요. <br /><strong>문의 이메일:</strong> <a href="mailto:goodday@unist.ac.kr">goodday@unist.ac.kr</a></p>
+    </section>
+
+    <nav class="toc card" aria-label="바로가기">
+      <strong>목차</strong>
+      <ul>
+        <li><a href="#account">계정 관련</a></li>
+        <li><a href="#matching">매칭 및 커뮤니티 기능 관련</a></li>
+        <li><a href="#chat">채팅 및 신고/차단 관련</a></li>
+        <li><a href="#academic">학사 일정 및 연구실 정보 관련</a></li>
+      </ul>
+    </nav>
+
+    <section class="faq card" id="account">
+      <h2>계정 관련</h2>
+      <details>
+        <summary>Q. 내 프로필을 수정하거나 삭제할 수 있나요?</summary>
+        <div class="answer">
+          <p>A. 네. 홈 화면 우측 상단 <strong>프로필</strong> 버튼 → <strong>프로필 수정</strong>에서 프로필을 수정하실 수 있으며, 프로필 화면의 <strong>회원 탈퇴</strong> 버튼을 누르시면 회원 탈퇴를 진행하실 수 있습니다.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="faq card" id="matching">
+      <h2>매칭 및 커뮤니티 기능 관련</h2>
+      <details>
+        <summary>Q. 원치 않는 사용자와 매칭되면 어떻게 차단할 수 있나요?</summary>
+        <div class="answer">
+          <p>A. <strong>채팅방 우측 상단 더보기 버튼</strong> → <strong>사용자 목록</strong>에서 더보기 버튼 → <strong>차단</strong> 진행으로 차단을 수행할 수 있습니다.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="faq card" id="chat">
+      <h2>채팅 및 신고/차단 관련</h2>
+      <details>
+        <summary>Q. 푸시 알림을 끌 수 있나요?</summary>
+        <div class="answer">
+          <p>A. 네. 홈 화면 우측 상단 <strong>프로필</strong> 버튼 → <strong>알림 설정</strong>에서 푸시 알림을 켜고 끌 수 있습니다.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Q. 특정 유저를 차단할 수 있나요?</summary>
+        <div class="answer">
+          <p>A. 네. <strong>유니커넥트</strong>, <strong>카풀</strong>, <strong>중고거래</strong>, <strong>유대전 댓글</strong>, <strong>랩실 후기</strong>, <strong>채팅방</strong> 등 모든 경로에서 원치 않는 유저를 차단할 수 있습니다. 각 포스트 카드의 <strong>우측 더보기 버튼</strong>(유니커넥트/카풀/중고거래) 또는 <strong>댓글·후기 우측 더보기 버튼</strong>, <strong>채팅방 유저 리스트 우측 더보기 버튼</strong>에서 차단을 수행할 수 있습니다. 또한 <strong>유저 프로필 화면</strong>에서 차단된 유저를 관리할 수 있습니다.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="faq card" id="academic">
+      <h2>학사 일정 및 연구실 정보 관련</h2>
+      <details>
+        <summary>Q. 학사 일정과 연구실 정보는 자동으로 업데이트 되나요?</summary>
+        <div class="answer">
+          <p>A. 네. 해당 정보는 자동으로 업데이트되며, 사용자분은 항상 최신 정보를 받아보실 수 있습니다.</p>
+        </div>
+      </details>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> UNIWAY. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    // 현재 연도 자동 표기
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

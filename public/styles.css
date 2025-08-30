@@ -1,0 +1,48 @@
+/* UNIWAY FAQ — clean white theme */
+:root{
+  --bg:#ffffff;
+  --fg:#0b0b0b;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --accent:#2563eb;
+  --radius:16px;
+  --shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Pretendard,Apple SD Gothic Neo,Noto Sans KR,sans-serif;}
+
+.container{max-width:880px;margin:0 auto;padding:24px;}
+
+.site-header{
+  border-bottom:1px solid var(--line);
+  background:var(--bg);
+}
+.site-header h1{margin:0 0 4px;font-size:28px;letter-spacing:-.02em}
+.subtitle{margin:0;color:var(--muted)}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:20px;
+  margin:18px 0;
+  box-shadow:var(--shadow);
+  background:#fff;
+}
+
+.toc ul{list-style:none;padding:8px 0 0;margin:0;display:flex;flex-wrap:wrap;gap:12px}
+.toc a{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--fg)}
+.toc a:hover{border-color:var(--accent);color:var(--accent)}
+
+.faq h2{margin:0 0 8px;font-size:22px}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:first-of-type{border-top:none}
+summary{cursor:pointer;font-weight:600;outline:none;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";float:right;color:var(--muted);transition:transform .2s ease}
+details[open] summary::after{transform:rotate(45deg)}
+.answer{margin-top:10px;color:#1f2937}
+
+.site-footer{padding:32px 0;color:var(--muted);text-align:center}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
